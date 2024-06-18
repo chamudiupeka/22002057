@@ -23,7 +23,7 @@ object Main {
     {
       val coverPrice = 24.95
       val discount = 0.4
-      val shippingCost = if (x <= 50) 3.0 else 3.0 + (x- 50) * 0.75
+      val shippingCost = if (x <= 50) x * 3.0 else 3.0 * 50 + (x- 50) * 0.75
       (coverPrice * (1 - discount) + shippingCost) * x
     }
 
